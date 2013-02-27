@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html><head>
+  <title>WebGL Water</title>
+  <script src="lightgl.js"></script>
+  <script src="cubemap.js"></script>
+  <script src="renderer.js"></script>
+  <script src="water.js"></script>
+  <script src="main.js"></script>
+  <style type="text/css">
+    * { -webkit-user-select: none; -moz-user-select: none; cursor: default; }
+    body { font: 13px/18px Arial, sans-serif; background: black; color: white; overflow: hidden; }
+    a { color: inherit; cursor: pointer; }
+    img { display: none; }
+    ul { padding: 0 0 0 20px; }
+    h1 { font: bold italic 30px/30px Georgia; text-align: center; }
+    h2 { font: bold italic 17px/17px Georgia; padding-top: 10px; }
+    small { display: block; font-size: 11px; line-height: 15px; }
+    canvas { position: absolute; top: 0; left: 0; }
+    #help { position: absolute; top: 0; right: 0; bottom: 0; width: 280px; padding-right: 20px; overflow: auto; }
+    #loading { position: absolute; left: 0; top: 50%; right: 300px; text-align: center; margin-top: -8px; }
+  </style>
+</head><body>
+  <div id="loading">Loading...</div>
+  <div id="help">
+    <ul>
+      <li>L键选择灯光方向</li>
+      <li>G键启用重力</li>
+    </ul>
+  </div>
+  <img id="tiles" src="tiles.jpg">
+  <img id="xneg" src="xneg.jpg">
+  <img id="xpos" src="xpos.jpg">
+  <img id="ypos" src="ypos.jpg">
+  <img id="zneg" src="zneg.jpg">
+  <img id="zpos" src="zpos.jpg">
+  <script type="text/javascript"><!--
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-17521220-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+  // --></script>
+</body></html>
